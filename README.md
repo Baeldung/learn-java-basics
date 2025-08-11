@@ -1,3 +1,3 @@
-# Learn Java Basics - Getting Started With Java
+# Learn Java Basics - Control Flow
 
-This is the codebase for Module "Getting Started With Java" of Learn Java Basics.
+This is the codebase for Module "Control Flow" of Learn Java Basics.
