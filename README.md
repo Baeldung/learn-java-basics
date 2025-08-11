@@ -1,3 +1,3 @@
-# Learn Java Basics - Control Flow
+# Learn Java Basics - Object-Oriented Programming Basics
 
-This is the codebase for Module "Control Flow" of Learn Java Basics.
+This is the codebase for Module "Object-Oriented Programming Basics" of Learn Java Basics.
