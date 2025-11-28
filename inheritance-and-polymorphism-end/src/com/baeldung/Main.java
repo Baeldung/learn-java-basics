@@ -1,3 +1,5 @@
+package com.baeldung;
+
 import com.baeldung.domain.PriorityTask;
 import com.baeldung.domain.Task;
 
