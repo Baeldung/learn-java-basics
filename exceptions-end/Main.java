@@ -2,8 +2,9 @@ package com.baeldung;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
 
@@ -16,16 +17,23 @@ public class Main {
             System.out.println("Error: The date format isn’t correct.");
         }
 
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader reader = null;
         try {
-            System.out.print("Enter a number: ");
-            int number = scanner.nextInt();
-            System.out.println("You entered: " + number);
-        } catch (InputMismatchException e) {
-            System.out.println("Error: That's not a valid number.");
-        } finally {
-            System.out.println("Closing scanner...");
-            scanner.close();
+            reader = new BufferedReader(new FileReader("text.txt"));
+            String line = reader.readLine();
+            System.out.println("First line: " + line);
+        } catch (IOException e) {
+            System.out.println("Error reading the file: " + e.getMessage());
+        }
+        finally {
+            if (reader != null) {
+                System.out.println("Closing reader...");
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    System.out.println("Error closing the reader.");
+                }
+            }
         }
 
         try {
