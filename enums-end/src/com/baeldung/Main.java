@@ -40,7 +40,7 @@ public class Main {
         PriorityTask task = new PriorityTask("Fix the critical bug", Priority.HIGH);
         System.out.println("Task: " + task.getDescription());
         System.out.println("Priority: " + task.getPriority());
-        System.out.println("Estimated days:" + task.getPriority()
+        System.out.println("Estimated days: " + task.getPriority()
             .getEstimatedDays());
 
         System.out.println("\n ... Builtin enum methods ...");

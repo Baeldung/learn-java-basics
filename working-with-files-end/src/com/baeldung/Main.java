@@ -53,7 +53,7 @@ public class Main {
         if (Files.exists(noFile)) {
             try {
                 String contents = Files.readString(noFile);
-                System.out.println(content);
+                System.out.println(contents);
             } catch (IOException e) {
                 System.out.println("Error reading file: " + e.getMessage());
             }

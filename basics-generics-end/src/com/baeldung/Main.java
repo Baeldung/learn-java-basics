@@ -12,13 +12,14 @@ public class Main {
         String message = (String) stringContainer.getValue();
 
         ObjectContainer numberContainer = new ObjectContainer(123);
-        String numberMessage = (String) numberContainer.getValue();
+        // Uncomment to observe the unsafe-cast failure; keep disabled for the later examples.
+        // String numberMessage = (String) numberContainer.getValue();
 
         Container<String> stringContainerWithTypeParameter = new Container<>("Hello");
         String secondMessage = stringContainerWithTypeParameter.getValue();
 
         Container<Integer> numberContainerWithTypeParameter = new Container<>(123);
-        // String numberMessage = numberContainer.getValue(); //compilation error
+        // String numberMessage = numberContainerWithTypeParameter.getValue(); //compilation error
 
         String[] words = { "Hello", "Generics" };
         String lastWord = getLastElement(words);
