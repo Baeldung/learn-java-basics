@@ -4,10 +4,10 @@ public class Main {
         // Declaring array of integers
         int[] scores = new int[5];
 
-        // Declaring and initialing an array in a single step
+        // Declaring and initializing an array in a single step
         int[] numbers = { 10, 20, 30, 40, 50 };
 
-        // Assessing and printing the first index
+        // Accessing and printing the first index
         int firstNumber = numbers[0];
         System.out.println("The first number is: " + firstNumber);
 
