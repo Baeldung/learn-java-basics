@@ -16,6 +16,7 @@ public class Main {
         boolean flag = scanner.nextBoolean();
         System.out.println("Successfully read all user inputs.");
 
+        scanner.nextLine();
         System.out.print("Please enter your name: ");
         String userName = scanner.nextLine();
 
