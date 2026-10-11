@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Task myTask = new Task("Organize code with packages");
+        System.out.println(myTask.description);
         // TaskHelper helper = new TaskHelper(); // Not accessible
     }
 }
