@@ -12,6 +12,9 @@ public class Main {
         performExport(task);
         performExport(campaign);
 
+        task.exportWithTimestamp();
+        campaign.exportWithTimestamp();
+
     }
 
     public static void performExport(Exportable item) {
