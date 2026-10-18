@@ -28,6 +28,10 @@ public class Main {
         System.out.println("Is the task closed? ");
         System.out.println(closed);
 
+        char playerGrade = 'A';
+        System.out.println("The player's grade is:");
+        System.out.println(playerGrade);
+
         String greeting = "Hello, world!";
         System.out.println(greeting);
 
